@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ExamEdge Pro — Enterprise AI-powered examination platform" />
+    <meta name="theme-color" content="#1a7f5a" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>ExamEdge Pro</title>
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      :root {
+        --color-background-primary: #ffffff;
+        --color-background-secondary: #f1f5f9;
+        --color-background-tertiary: #f8fafc;
+        --color-border-tertiary: rgba(0,0,0,.1);
+        --color-text-primary: #111827;
+        --color-text-secondary: #6b7280;
+      }
+      [data-theme="dark"] {
+        --color-background-primary: #1a1f2e;
+        --color-background-secondary: #242938;
+        --color-background-tertiary: #141824;
+        --color-border-tertiary: rgba(255,255,255,.08);
+        --color-text-primary: #f1f5f9;
+        --color-text-secondary: #94a3b8;
+      }
+      body { font-family: system-ui,-apple-system,sans-serif; background: var(--color-background-tertiary); color: var(--color-text-primary); line-height: 1.5; -webkit-font-smoothing: antialiased; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.6} }
+      @keyframes fadeIn { from{opacity:0;transform:translateY(4px)} to{opacity:1;transform:translateY(0)} }
+      #root { height: 100vh; overflow: hidden; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

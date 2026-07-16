@@ -1,0 +1,13 @@
+.env
+node_modules/
+dist/
+/backend/vendor/
+/frontend/node_modules/
+/frontend/dist/
+.DS_Store
+.phpunit.result.cache
+storage/framework/cache/
+storage/framework/sessions/
+storage/framework/views/
+storage/app/
+bootstrap/cache/
