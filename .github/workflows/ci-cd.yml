@@ -54,7 +54,7 @@ jobs:
           DB_USERNAME: examedge
           DB_PASSWORD: secret
       - name: Run PHPUnit
-        run: cd backend && php artisan test
+        run: cd backend && ./vendor/bin/phpunit
 
   test-frontend:
     name: Frontend tests (Vite)
